@@ -6,7 +6,7 @@ const Advertise = () => {
   const [width, setWidth] = useState(window.innerWidth); 
   return (
     <>
-      <div className="section" id="Advertise">
+      <div className="border-bottom" id="Advertise">
         <Container>
           <Figure className="d-flex justify-content-center mb-0 py-3">
             <a href={"#"}>
