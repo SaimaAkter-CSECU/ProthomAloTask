@@ -1,0 +1,111 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+*{
+  font-family: 'Shurjo', 'SolaimanLipi', "Siyam Rupali", Roboto, Arial, Helvetica, Monospace;
+}
+
+$red-sub-title-color : #d60000; 
+$heading-color: rgb(18,18,18); 
+$basic-text-color: rgb(85,85,85);
+$border-color: rgb(226, 226, 226); 
+$hover-color: #0573e6; 
+$extra-light-black: #555; 
+
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.border-bottom{
+  border-bottom: 1px solid $border-color;
+}
+
+nav{
+  border-bottom: 3px solid $border-color;
+  .navbar-brand{
+    width: inherit; 
+  }
+  @media screen and (max-width: 768px) {
+    .navbar-brand img {
+      width: 160px;
+    }
+  }
+}
+.card{
+  border: none !important; 
+  background: transparent !important;
+  .card-title{
+    font-family: 'SolaimanLipi';
+    color: $heading-color;
+    font-weight: bold;
+    // text-align: justify;
+    &:hover{
+      color: $hover-color; 
+    }
+    .card-sub-title{
+      color: $red-sub-title-color; 
+    }
+  }
+  img{
+    max-height: 250px;
+  }
+}
+.MainNewsSection{
+  border-right: 1px solid $border-color; 
+
+  .newsSectionDiv{
+    border-bottom: 1px solid $border-color;
+    .newsCardDiv{
+      border-right: 1px solid $border-color !important;
+      .card-title{
+        font-size: 1.25rem;
+        line-height: 1.3;
+      } 
+      .card-title.large-title{
+        font-size: 1.65rem; 
+      }
+      .card-text.description{
+        font-size: 1em;
+        font-weight: 400;
+      }
+    }
+  }
+  .newsSectionDiv:last-child{
+    border-bottom : none !important;
+  }
+  .newsSectionDiv1, .newsSectionDiv2, .newsSectionDiv3, .newsSectionDiv4{
+    .newsCardDiv:last-child{
+      border-right : none !important;
+    }
+  }
+}
+.sidebar{
+  // border-left: 1px solid $border-color;
+  .card{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    .card-title{
+      font-size: 1.15rem;
+      line-height: 1.3;
+    } 
+  }
+}
+
+
+
+.section{
+  border-bottom: 1px solid $border-color;
+}
+.footer-div{
+  border-top: 1px solid $border-color;
+  color: $extra-light-black; 
+}
+
+#Advertise img{
+  max-height: 250px !important;
+}
+
+
+
+
+
+
